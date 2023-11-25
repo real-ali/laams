@@ -4,10 +4,10 @@ mod values;
 
 use self::{
     enums::{Priority, Status},
-    values::Timeline, entities::User,
+    values::Timeline,
 };
 
-use super::common::models::{Aggregate, Entity};
+use super::common::{models::{Aggregate, Entity}, entities::User};
 
 #[derive(Debug, Default, Clone)]
 pub struct Task {
@@ -16,7 +16,7 @@ pub struct Task {
     pub description: String,
     pub priority: Priority,
     pub people: Vec<User>,
-    pub doc: String,
+    pub doc: String, // path
     pub timeline: Timeline,
     pub connection: Vec<Task>,
     pub status: Status,
