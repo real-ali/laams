@@ -7,7 +7,10 @@ use self::{
     values::Timeline,
 };
 
-use super::common::{models::{Aggregate, Entity}, entities::User};
+use super::common::{
+    entities::{Attachment, User},
+    models::{Aggregate, Entity},
+};
 
 #[derive(Debug, Default, Clone)]
 pub struct Task {
@@ -21,6 +24,7 @@ pub struct Task {
     pub connection: Vec<Task>,
     pub status: Status,
     pub items: Vec<Task>,
+    pub attachments: Vec<Attachment>,
 }
 
 impl Task {
