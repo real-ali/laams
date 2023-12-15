@@ -1,5 +1,5 @@
 use crate::domain::class::enums::MediaType;
-
+#[derive(Debug,Clone,Default)]
 pub struct MediaContent{
     id:String,
     title: String,

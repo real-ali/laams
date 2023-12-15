@@ -6,3 +6,19 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+prost = "0.12.3"
+tonic = "0.10.2"
+
+
+# server binary
+[[bin]]
+    name = "server"
+    path = "src/bin/server.rs"
+
+# client binary
+[[bin]]
+    name = "client"
+    path = "src/bin/client.rs"
+
+[build-dependencies]
+tonic-build = "0.10.2"

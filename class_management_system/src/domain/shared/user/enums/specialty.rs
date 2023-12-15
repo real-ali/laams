@@ -1,5 +1,7 @@
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub enum Specialty {
+    #[default]
+    None,
     Maths,
     ComputerScience,
     ElectricalEngineering,

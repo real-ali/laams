@@ -1,5 +1,5 @@
 use super::LessonContent;
-
+#[derive(Debug,Clone,Default)]
 pub struct Lesson{
     id:String,
     title:String,

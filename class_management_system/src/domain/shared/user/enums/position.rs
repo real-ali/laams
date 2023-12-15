@@ -1,5 +1,7 @@
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 pub enum Position {
+    #[default]
+    None,
     Student,
     Teacher,
 }

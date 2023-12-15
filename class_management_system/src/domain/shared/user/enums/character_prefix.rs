@@ -1,25 +1,18 @@
-
-
-
-#[derive(Debug,Clone)]
+#[derive(Debug, Clone, Default)]
 //Honorific
 pub enum CharacterPrefix {
-    Mr,       // Used before the name of an adult male
-    Miss,     // Traditionally used for unmarried women
-    Ms,       // Neutral title for women, regardless of marital status
-    Mrs,      // Used before the name of a married woman
-    Dr,       // Used for individuals with a doctoral degree, can be any gender
-    Prof,     // Used for individuals with a professorial rank, can be any gender
-    Capt,     // Used for a captain, typically in the military or maritime context
-    Rev,      // Used for a reverend, typically a minister or clergy
-    Col,      // Used for a colonel, typically in the military
-    Sgt,      // Used for a sergeant, typically in the military or police
-}
-
-impl Default for CharacterPrefix {
-    fn default() -> Self {
-        Self::Mr
-    }
+    #[default]
+    None,
+    Mr,   // Used before the name of an adult male
+    Miss, // Traditionally used for unmarried women
+    Ms,   // Neutral title for women, regardless of marital status
+    Mrs,  // Used before the name of a married woman
+    Dr,   // Used for individuals with a doctoral degree, can be any gender
+    Prof, // Used for individuals with a professorial rank, can be any gender
+    Capt, // Used for a captain, typically in the military or maritime context
+    Rev,  // Used for a reverend, typically a minister or clergy
+    Col,  // Used for a colonel, typically in the military
+    Sgt,  // Used for a sergeant, typically in the military or police
 }
 
 impl CharacterPrefix {

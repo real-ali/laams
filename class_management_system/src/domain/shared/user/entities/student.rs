@@ -1,7 +1,7 @@
 use crate::domain::shared::{user::enums::{CharacterPrefix, Position}, values::PhoneNumber};
 
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone,Default)]
 pub struct Student {
     id: String,
     prefix: CharacterPrefix,

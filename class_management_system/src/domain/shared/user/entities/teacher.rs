@@ -3,7 +3,7 @@ use crate::domain::shared::{
     values::{Currency, PhoneNumber},
 };
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone,Default)]
 pub struct Teacher {
     id: String,
     prefix: CharacterPrefix,
